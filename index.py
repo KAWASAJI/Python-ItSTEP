@@ -16,6 +16,8 @@ def openMenu():
 
 print('hello')
 
+print('Hello  Maksim')
+
 label1 = Label(window, text="Restaurant",font="Tahoma 20",bg="#A5FFAC",fg="black")
 button1= Button(window, text="Открыть Меню", font = "Tahoma 20",bg="#9896E8",fg = "white",command=openMenu)
 button2= Button(window, text="Добавить заказ", font = "Tahoma 20",bg="#9896E8",fg = "white")
