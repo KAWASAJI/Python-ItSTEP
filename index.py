@@ -28,19 +28,32 @@ def openOrders():
     order.mainloop()
 
 def openMenu():
-    food = "\tИмя-Цена\tID\n" \
+    def openDrinks():
+        label1.pack()
+        btn2.pack()
+    def openFood():
+        label2.pack()
+    drinks = "\tИмя-Цена\tID\n" \
            "\tСок-1\t\t[1]\n" \
            "\tВода-1\t\t[2]\n" \
            "\tКола-2\t\t[3]\n" \
-           "\tМолоко-2\t[4]" \
+           "\tМолоко-2\t\t[4]" \
 
-
+    food = "\tИмя-Цена\tID\n" \
+             "\tСок-1\t\t[1]\n" \
+             "\tВода-1\t\t[2]\n" \
+             "\tКола-2\t\t[3]\n" \
+             "\tМолоко-2\t\t[4]"
     menu =Tk()
     menu.title("Menu")
     menu.geometry("400x800")
     menu.resizable(0, 0)
+    btn1 = Button(menu, text='Напитки', command=openDrinks, bg="#FFB2B2", height=2, width=10)
+    btn2 = Button(menu, text='Еда', command=openFood, bg="#FFB2B2", height=2, width=10)
+    label1 = Label(menu, text=drinks, font="Arial")
+    label2 = Label(menu, text=food, font="Arial")
 
-    label1 = Label(menu, text=food)
+    btn1.pack()
 
     menu.mainloop()
 
