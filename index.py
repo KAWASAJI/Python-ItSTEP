@@ -14,6 +14,7 @@ def openMenu():
     menu.resizable(0, 0)
     menu.mainloop()
 
+print('hello')
 
 label1 = Label(window, text="Restaurant",font="Tahoma 20",bg="#A5FFAC",fg="black")
 button1= Button(window, text="Открыть Меню", font = "Tahoma 20",bg="#9896E8",fg = "white",command=openMenu)
